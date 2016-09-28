@@ -20,7 +20,11 @@ production:
       region: ap-southeast-2
       size: t2.medium
       root_disk_size: 20
-
   redis:
     server:
-      same_as: lion
+      unique_name: leopard
+      vendor: aws
+      region: ap-southeast-2
+      size: t2.medium
+      root_disk_size: 20
+
