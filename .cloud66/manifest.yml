@@ -5,7 +5,7 @@ production:
       postgis: false
       vpc_id: default
     server:
-      unique_name: combined
+      unique_name: tiger
       vendor: aws
       region: ap-southeast-2
       size: t2.medium
@@ -15,7 +15,12 @@ production:
       do_initial_db_schema_load: true
       vpc_id: default
     server:
-      same_as: combined
+      unique_name: lion
+      vendor: aws
+      region: ap-southeast-2
+      size: t2.medium
+      root_disk_size: 20
+
   redis:
     server:
-      same_as: combined
+      same_as: lion
